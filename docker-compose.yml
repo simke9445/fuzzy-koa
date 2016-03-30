@@ -1,0 +1,15 @@
+web:
+    build: .
+    ports: 
+        - 3000:3000
+    links:
+        - db
+db:
+    image: rethinkdb
+    ports:
+        - 8080:8080
+        - 28015:28015
+db_migration:
+    build: ./db/
+    links:
+        - db

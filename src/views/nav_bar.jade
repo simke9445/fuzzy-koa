@@ -1,0 +1,62 @@
+nav.navbar.navbar-default.navbar-static-top
+    .container
+        .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+            a.navbar-brand(href='/') Vanredno stanje
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+            ul.nav.navbar-nav
+                li.dropdown
+                    a(href='/coordinators/dashboard') Koordinatori
+                li
+                    a(href='/admins/dashboard') Admins
+            ul.nav.navbar-nav.navbar-right
+                li.dropdown
+                    a.dropdown-toggle(href='#', data-toggle='dropdown')
+                        span.glyphicon.glyphicon-comment
+                        | Akcije&nbsp;
+                        span.label.label-primary 42
+                    ul.dropdown-menu
+                        li
+                            a(href='#')
+                                span.label.label-warning 7:00 AM
+                                | Doniranje odece
+                        li.divider
+                        li
+                            a.text-center(href='#') View All
+                li.dropdown
+                    a.dropdown-toggle(href='#', data-toggle='dropdown')
+                        span.glyphicon.glyphicon-envelope
+                        | Prioriteti&nbsp;
+                        span.label.label-info 32
+                    ul.dropdown-menu
+                        li
+                            a(href='#')
+                                span.label.label-warning 4:00 AM
+                                | Havarija na Makisu
+                        li.divider
+                        li
+                            a.text-center(href='#') View All
+                li.dropdown
+                    a.dropdown-toggle(href='#', data-toggle='dropdown')
+                        span.glyphicon.glyphicon-user
+                        | Nikola&nbsp;
+                        b.caret
+                    ul.dropdown-menu
+                        li
+                            a(href='#')
+                                span.glyphicon.glyphicon-user
+                                | Profile
+                        li
+                            a(href='#')
+                                span.glyphicon.glyphicon-cog
+                                | Settings
+                        li.divider
+                        li
+                            a(href='#')
+                                span.glyphicon.glyphicon-off
+                                | Logout
+

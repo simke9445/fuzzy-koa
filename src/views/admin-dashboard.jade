@@ -1,0 +1,47 @@
+extends layout
+
+block content
+    .container
+        .row-fluid(style='padding-top: 2.5em;')
+                .flip
+                    .card
+                        .face.front
+                            .panel.panel-default
+                                .panel-heading(style='text-align: center;')
+                                    h4 Gradnja nasipa na Dunavu
+                                    span.fa.fa-check(style='font-size:2em; padding-right: 0.25em;padding-left:0.25em;')
+                                    span.fa.fa-times(style='font-size:2em; padding-right: 0.25em;padding-left:0.25em;')
+                                .panel-body(style='height: 25em;')
+                                    .row-fluid(style='height: 100%;')
+                                        .col-lg-6(style='height: 100%;')
+                                            p <b>Ime koordinatora:</b>
+                                            p Djordje Simovic
+                                            p <b>Broj telefona:</b>
+                                            p +381 64 426 2365
+                                            p <b>Opis:</b>
+                                            p Potrebni snazni muskarci za istovar dzakova sa peskom i rasporedjivanje istih na obale Dunava.
+
+                                        .col-lg-6(style='height: 100%; padding-right: 0;')
+                                            .row-fluid(style='text-align: center; padding-bottom: 3em;')
+                                                span.fa.fa-anchor(style='font-size:2em; padding-right: 0.25em;padding-left:0.25em;')
+                                                span.fa.fa-bank(style='font-size:2em; padding-right: 0.25em;padding-left:0.25em;')
+                                                span.fa.fa-bus(style='font-size:2em; padding-right: 0.25em;padding-left:0.25em;')
+                                                span.fa.fa-compass(style='font-size:2em; padding-right: 0.25em;padding-left:0.25em;')
+                                            .row-fluid
+                                                .col-lg-6(style='padding-right: 0; padding-left: 0;')
+                                                    p(style='font-size: 1.2em; text-align: center;') Ocekivano vreme dolaska: 15 min
+                                                    p(style='height: 80%; font-weight: bold; font-size: 4em; text-align: center;') 15
+                                                .col-lg-6(style='padding-right: 0; padding-left: 0;')
+                                                    p(style='font-size: 1.2em; text-align: center;') Ukupan broj potrebnih ljudi
+                                                    p(style='height: 80%; font-weight: bold; font-size: 4em; text-align: center;') 150
+                                            .row-fluid
+                                            .row(style='padding-top: 35%; padding-left: 20%;')
+                                                input.slider(type='text', name='somename', data-provide='slider', data-slider-ticks='[1, 2, 3, 4]', data-slider-ticks-labels='["mirno", "oprez", "hitno", "kriticno"]', data-slider-min='1', data-slider-max='4', data-slider-step='1', data-slider-value='3', data-slider-tooltip='hide')
+                        .face.back
+                            .panel.panel-default
+                                .panel-heading(style='text-align: center;')
+                                    h4 mappie
+                                    .a.fa.fa-undo
+                                #map-container.map-content
+                                    script(src='http://maps.google.com/maps/api/js?v=3.exp')
+                                    script(src='/javascripts/map.js')
